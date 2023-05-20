@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url("../img/forest.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0px;
+}
+
+/* carousel */
+#carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust the height as needed */
+}
+
+/* Adjust the brightness of carousel indicators */
+.carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+}
+
+#text-with-outline{
+    text-shadow:
+            -1px -1px 0 #fff,
+            1px -1px 0 #fff,
+            -1px 1px 0 #fff,
+            1px 1px 0 #fff;
+}
+#navi .nav-link{
+    color: black;
+}

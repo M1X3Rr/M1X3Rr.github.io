@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vega</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="shortcut icon" href="img/villanova-wildcats-logo-vector.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/villanova-wildcats-logo-vector.svg" alt="Logo" style="width: 80px;"></a>
+        <a href="index.html"><h1 style="color: #3b3b8f; height: 15px;" id="text-with-outline">EGA</h1></a>
+    </header>
+    <!-- nav -->
+    <div class="container-fluid" style="background-color: #d0d0d0;">
+        <ul class="nav justify-content-center" id="navi">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item disabled">
+                <a class="nav-link" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- popout -->
+    <div class="popout">
+        <div class="popout-content">
+            <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h3>Register</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 rounded">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">Start learning web TODAY</h1>
+                <p class="lead my-3">HTML is the standard markup language for creating Web pages. So if you want to know how to make beautiful web pages</p>
+                <p class="lead mb-0"><a href="https://www.w3schools.com/html/default.asp" class="fw-bold" target="_blank">Start your journey here...</a></p>
+            </div>
+        </div>
+
+        <!-- NEWS -->
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-primary">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Pasta With WHAT?</h3>
+                        <div class="mb-1 text-body-secondary">May 21</div>
+                        <p class="card-text mb-auto">Every country has its own idea of cheap yet satisfying food. Poland is no exception. But the Polish idea, now well over a century old, can cause some confusion among first-time visitors. Let us explain.</p>
+                        <a href="https://3seaseurope.com/polish-milk-bars-poland/" class="stretched-link" target="_blank">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="img/Blog/pasta.png" style="width: 250px; height: 250px" role="img" alt="Pasta">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-success">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Cars</strong>
+                        <h3 class="mb-0">2023 BMW iX M60 Is the Spicier Version of BMW’s Electric SUV</h3>
+                        <div class="mb-1 text-body-secondary">May 16</div>
+                        <p class="mb-auto">High performance and sharper cornering come at the price of a rougher ride and shortened driving range.</p>
+                        <a href="https://www.designnews.com/automotive-engineering/2023-bmw-ix-m60-spicier-version-bmws-electric-suv" class="stretched-link" target="_blank">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="img/Blog/BMW.png" style="width: 250px; height: 250px" role="img" alt="BMW Car">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BLOG -->
+        <div class="row g-5">
+            <!-- LEFT -->
+            <div class="col-md-8">
+                <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                    From the Firehose
+                </h3>
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">Simple blog post</h2>
+                    <p class="blog-post-meta">May 21, 2023 by <a href="#">ME</a></p>
+
+                    <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <h2>Blockquotes</h2>
+                    <p>Socrates:</p>
+                    <blockquote class="blockquote">
+                        <p>I know that I know nothing.</p>
+                    </blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <h3>Example lists</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <p>Unordered list:</p>
+                    <ul>
+                        <li>First list item</li>
+                        <li>Second list item </li>
+                        <li>Third list item </li>
+                    </ul>
+                    <p>Ordered list:</p>
+                    <ol>
+                        <li>First list item</li>
+                        <li>Second list item with a longer description</li>
+                        <li>Third list item to close it out</li>
+                    </ol>
+                    <p>And this is a definition list:</p>
+                    <dl>
+                        <dt>HyperText Markup Language (HTML)</dt>
+                        <dd>The language used to describe and define the content of a Web page</dd>
+                        <dt>Cascading Style Sheets (CSS)</dt>
+                        <dd>Used to describe the appearance of Web content</dd>
+                        <dt>JavaScript (JS)</dt>
+                        <dd>The programming language used to build advanced Web sites and applications</dd>
+                    </dl>
+                    <h2>Inline HTML elements</h2>
+                    <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                    <ul>
+                        <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                        <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                        <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                        <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                        <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                        <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                    </ul>
+                    <p>Most of these elements are styled by browsers.</p>
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <h3>Sub-heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <pre><code>Code block</code></pre>
+                    <pre><code>var popout = document.querySelector(".popout");
+var closeBtn = document.querySelector(".close");
+
+closeBtn.addEventListener("click", function() {
+    popout.style.display = "none";
+});
+
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        popout.style.display = "block";
+    }, 15000); // Adjust the time (in milliseconds) as per your preference
+});</code></pre>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </article>
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">Another blog post</h2>
+                    <p class="blog-post-meta">December 23, 2023 by <a href="#">ME</a></p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <blockquote>
+                        <p>Longer quote, with some <strong>emphasized text</strong> in the middle of it.</p>
+                    </blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <h3>Example table</h3>
+                    <p>Some table:</p>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Upvotes</th>
+                            <th>Downvotes</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Alice</td>
+                            <td>10</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>Bob</td>
+                            <td>4</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Charlie</td>
+                            <td>7</td>
+                            <td>9</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td>Totals</td>
+                            <td>21</td>
+                            <td>23</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </article>
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">New feature</h2>
+                    <p class="blog-post-meta">December 14, 2023 by <a href="#">ME</a></p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <ul>
+                        <li>First list item</li>
+                        <li>Second list item</li>
+                        <li>Third list item</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </article>
+
+                <nav class="blog-pagination" aria-label="Pagination">
+                    <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+                    <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+                </nav>
+
+            </div>
+
+            <!-- Archive -->
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                    <div class="p-4 mb-3 bg-body-tertiary rounded">
+                        <h4 class="fst-italic">About</h4>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem.
+                            Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis.
+                        </p>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Archives</h4>
+                        <ol class="list-unstyled mb-0">
+                            <li><a href="#">March 2021</a></li>
+                            <li><a href="#">February 2021</a></li>
+                            <li><a href="#">January 2021</a></li>
+                            <li><a href="#">December 2020</a></li>
+                            <li><a href="#">November 2020</a></li>
+                            <li><a href="#">October 2020</a></li>
+                            <li><a href="#">September 2020</a></li>
+                            <li><a href="#">August 2020</a></li>
+                            <li><a href="#">July 2020</a></li>
+                            <li><a href="#">June 2020</a></li>
+                            <li><a href="#">May 2020</a></li>
+                            <li><a href="#">April 2020</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Elsewhere</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-white mt-auto" style="overflow: clip">
+        <div class="container pt-3 pb-3">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <img src="img/villanova-wildcats-logo-vector.svg" alt="logo" style="width: 170px"/>
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="form.html">Forms</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p>
+                        Tematínska 3246/10<br/>
+                        Bratislava<br/>
+                        845 05<br/>
+                        <a href="mailto:example@example.com?subject=Hello%20there&amp;body=Hi%20John%2C%0D%0A%0D%0AHow%20are%20you%3F">mojemail@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42626.38537542392!2d17.035838448632823!3d48.1073597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89baf59c9d9f%3A0x6470ef7e6a756fdf!2zUGFuZXVyw7Nwc2thIHZ5c29rw6EgxaFrb2xh!5e0!3m2!1ssk!2ssk!4v1684595199442!5m2!1ssk!2ssk" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/index.js"></script>
+    <script src="js/time_update.js"></script>
+    <script src="Bootstrap/jquery.js"></script>
+    <script src="Bootstrap/popper.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

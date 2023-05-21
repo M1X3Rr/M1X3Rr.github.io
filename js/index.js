@@ -17,12 +17,17 @@ function updateLastUpdatedTime() {
 
     for (var i = 0; i < lastUpdatedElements.length; i++) {
         var element = lastUpdatedElements[i];
-        var lastUpdatedTimeText = element.textContent.split(" ")[2]; // Extract time value from text
-        var lastUpdatedTime = new Date(currentTime - lastUpdatedTimeText * 60000); // Calculate corresponding Date object
+        var lastUpdatedText = element.textContent;
+        var regexResult = lastUpdatedText.match(/(\d{2}:\d{2})/); // Extract time value using regex
 
-        var timeDifference = Math.floor((currentTime - lastUpdatedTime) / 60000); // Difference in minutes
+        if (regexResult && regexResult.length > 0) {
+            var lastUpdatedTimeString = regexResult[0];
+            var lastUpdatedTime = new Date(currentTime.toDateString() + ' ' + lastUpdatedTimeString); // Create a Date object from the extracted time
 
-        element.textContent = (timeDifference === 0) ? "Last updated just now" : "Last updated " + timeDifference + " mins ago";
+            var timeDifference = Math.floor((currentTime - lastUpdatedTime) / 60000); // Difference in minutes
+
+            element.textContent = (timeDifference === 0) ? "Last updated just now" : "Last updated " + timeDifference + " mins ago";
+        }
     }
 }
 

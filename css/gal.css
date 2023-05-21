@@ -60,7 +60,7 @@ header{
     right: 0;
     box-sizing: border-box;
 }
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+@media (max-width: 412px) { /* Adjust the breakpoint as needed */
     .footer {
         position: fixed;
         bottom: 0;

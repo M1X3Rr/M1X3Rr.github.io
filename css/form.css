@@ -68,6 +68,10 @@ header{
     cursor: pointer;
 }
 
+#main{
+    background-color: #e8e8e8;
+}
+
 .footer {
     position: relative;
 }

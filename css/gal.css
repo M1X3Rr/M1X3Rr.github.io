@@ -35,6 +35,13 @@ header{
     background-color: rgba(var(--bs-bg-opacity))!important;
 }
 
+.overlay-text {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    color: #fff;
+}
+
 /*album*/
 
 #text-with-outline{

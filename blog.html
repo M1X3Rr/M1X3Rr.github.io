@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="shortcut icon" href="img/villanova-wildcats-logo-vector.svg" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/table.js"></script>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="img/villanova-wildcats-logo-vector.svg" alt="Logo" style="width: 80px;"></a>
-        <a href="index.html"><h1 style="color: #3b3b8f; height: 15px;" id="text-with-outline">EGA</h1></a>
+        <a href="index.html" class="no-underline"><h1 style="color: #3b3b8f; height: 15px;" id="text-with-outline">EGA</h1></a>
     </header>
     <!-- nav -->
     <div class="container-fluid" style="background-color: #d0d0d0;">
@@ -143,12 +145,12 @@
                     <h2>Inline HTML elements</h2>
                     <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
                     <ul>
-                        <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-                        <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-                        <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
-                        <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-                        <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-                        <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                        <li><strong>Bold text</strong>.</li>
+                        <li><em>Italicize text</em>.</li>
+                        <li><abbr title="Abbreviation">Abbreviations</abbr>.</li>
+                        <li>Citations, like <cite>— Mark Otto</cite>.</li>
+                        <li><del>Deleted text</del>and <ins>inserted text</ins>.</li>
+                        <li>Superscript <sup>text</sup>and subscript <sub>text</sub>.</li>
                     </ul>
                     <p>Most of these elements are styled by browsers.</p>
                     <h2>Heading</h2>
@@ -182,39 +184,7 @@ window.addEventListener("load", function() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                     <h3>Example table</h3>
                     <p>Some table:</p>
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Upvotes</th>
-                            <th>Downvotes</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Alice</td>
-                            <td>10</td>
-                            <td>11</td>
-                        </tr>
-                        <tr>
-                            <td>Bob</td>
-                            <td>4</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Charlie</td>
-                            <td>7</td>
-                            <td>9</td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
-                        <tr>
-                            <td>Totals</td>
-                            <td>21</td>
-                            <td>23</td>
-                        </tr>
-                        </tfoot>
-                    </table>
+                    <div class="table" id="table-container"></div>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut finibus lorem. Donec rhoncus tempor maximus. Nam feugiat nunc velit, et dapibus lacus rhoncus quis. Sed at metus imperdiet, vehicula magna at, bibendum tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                 </article>

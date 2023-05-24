@@ -1,0 +1,5 @@
+<!ELEMENT votes (row*)>
+        <!ELEMENT row (Name, Upvotes, Downvotes)>
+        <!ELEMENT Name (#PCDATA)>
+        <!ELEMENT Upvotes (#PCDATA)>
+        <!ELEMENT Downvotes (#PCDATA)>

@@ -73,8 +73,12 @@ header{
 }
 
 .border-primary, .border-info{
-    border-width: 2px;
+    border-width: 3px;
 }
+.border-info{
+    border-color: #0dcbf1;
+}
+
 .card-bg-primary{
     background-color: #007bff;
 }

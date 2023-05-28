@@ -73,7 +73,7 @@ header{
 }
 
 .border-primary, .border-info{
-    border-width: 3px;
+    border-width: 1px;
 }
 .border-info{
     border-color: #0dcbf1;
@@ -84,18 +84,6 @@ header{
 }
 .card-bg-info{
     background-color: #0dcbf1;
-}
-
-.footer {
-    position: relative;
-}
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
-    .footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
 }
 
 a.no-underline {

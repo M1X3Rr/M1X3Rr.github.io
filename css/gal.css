@@ -60,6 +60,18 @@ header{
     margin-left: 0;
 }
 
+
+.box {
+    border: 1px solid #ccc;
+    max-width: 1200px;
+    margin: 20px 0 20px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
 .footer {
     position: relative;
     bottom: 0;

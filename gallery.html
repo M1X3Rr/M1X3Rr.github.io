@@ -30,41 +30,51 @@
             </li>
         </ul>
     </div>
-    <!-- slide show + vid -->
+
     <div class="container">
+        <!-- carousel -->
         <div class="row">
-            <div id="carousel" class="container col" style="width: 600px">
-                <div id="carousel_slide" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel_slide" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel_slide" data-slide-to="1"></li>
-                        <li data-target="#carousel_slide" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/Gallery/slide1.jpg" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="img/Gallery/slide2.jpg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="img/Gallery/slide3.jpg" alt="Third slide">
+            <div class="container col">
+                <div class="box" style="width: 1080px">
+                    <div id="carousel" class="container" style="max-width: 100%">
+                        <div id="carousel_slide" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel_slide" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel_slide" data-slide-to="1"></li>
+                                <li data-target="#carousel_slide" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/Gallery/slide1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Gallery/slide2.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Gallery/slide3.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_slide" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_slide" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carousel_slide" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel_slide" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
             </div>
         </div>
+        <!-- vid -->
         <div class="container-fluid">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="img/Gallery/vid/waterfall.mp4"></iframe>
+                <div class="container">
+                    <video controls>
+                        <source src="img/Gallery/vid/waterfall.mp4">
+                    </video>
+                </div>
                 <div class="overlay-text">
                     <h4>Cool Waterfall</h4>
                 </div>
@@ -74,7 +84,7 @@
     </div>
 
     <!-- album -->
-    <div class="album py-5 bg-body-tertiary">
+    <div class="container mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -114,17 +124,18 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="album py-5 bg-body-tertiary">
-        <div class="container">
-            <div class="row g-3">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="img/Gallery/album/villige_l.png" class="card-img-top img-fluid" alt="Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
-                        <div class="card-body">
-                            <p class="card-text">Description.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary" id="last-updated-4">Last updated  mins ago</small>
+
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/Gallery/album/villige_l.png" class="card-img-top img-fluid" alt="Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+                            <div class="card-body">
+                                <p class="card-text">Description.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-body-secondary" id="last-updated-4">Last updated  mins ago</small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -153,10 +164,11 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <p>
+                        <a href="https://www.paneurouni.com/" target="_blank"> Paneuropian Uni</a><br/>
                         Tematínska 3246/10<br/>
                         Bratislava<br/>
                         845 05<br/>
-                        <a href="mailto:example@example.com?subject=Hello%20there&amp;body=Hi%20John%2C%0D%0A%0D%0AHow%20are%20you%3F">mojemail@gmail.com</a>
+                        <a href="mailto:example@example.com?subject=Hello%20there&amp;body=Hi%20John%2C%0D%0A%0D%0AHow%20are%20you%3F" style="margin-top: 10px">mojemail@gmail.com</a>
                     </p>
                 </div>
                 <div class="col-12 col-md-3">

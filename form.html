@@ -61,17 +61,17 @@
           <div class="col">
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              <input type="email" class="form-control form-control-lg" id="email" placeholder="name@example.com">
             </div>
             <div class="mb-3">
               <label for="text" class="form-label">Write your text</label>
-              <textarea class="form-control" id="text" rows="5" cols="70"></textarea>
+              <textarea class="form-control form-control-sm" id="text" rows="5" cols="70"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
           </div>
         </form>
         <!-- REST -->
-        <form id="restForm" class="row g-3 mb-3">
+        <form id="restForm" class="row g-3 mb-3 mt-3 ml-1">
           <div class="col-md-4">
             <label for="inputState" class="form-label">State</label>
             <select id="inputState" class="form-select">
@@ -132,29 +132,33 @@
     <div class="container pt-3 pb-3">
       <div class="row">
         <div class="col-12 col-md-3">
-          <a href="index.html"><img src="img/villanova-wildcats-logo-vector.svg" alt="logo" style="width: 170px"/></a>
+          <a href="index.html">
+            <img src="img/villanova-wildcats-logo-vector.svg" alt="logo" style="width: 170px"/>
+          </a>
         </div>
         <div class="col-6 col-md-3">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="form.html">Forms</a></li>
+            <li><a href="form.html">Contact</a></li>
           </ul>
         </div>
         <div class="col-6 col-md-3">
           <p>
+            <a href="https://www.paneurouni.com/" target="_blank"> Paneuropian Uni</a><br/>
             Tematínska 3246/10<br/>
             Bratislava<br/>
             845 05<br/>
-            <a href="mailto:example@example.com?subject=Hello%20there&amp;body=Hi%20John%2C%0D%0A%0D%0AHow%20are%20you%3F">mojemail@gmail.com</a>
+            <a href="mailto:example@example.com?subject=Hello%20there&amp;body=Hi%20John%2C%0D%0A%0D%0AHow%20are%20you%3F" style="margin-top: 10px">mojemail@gmail.com</a>
           </p>
         </div>
         <div class="col-12 col-md-3">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42626.38537542392!2d17.035838448632823!3d48.1073597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89baf59c9d9f%3A0x6470ef7e6a756fdf!2zUGFuZXVyw7Nwc2thIHZ5c29rw6EgxaFrb2xh!5e0!3m2!1ssk!2ssk!4v1684595199442!5m2!1ssk!2ssk" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- scripts -->
   <script src="js/controls/restControl.js"></script>

@@ -16,9 +16,14 @@
         <Downvotes>9</Downvotes>
     </row>
     <row>
+        <Name>Igor</Name>
+        <Upvotes>5</Upvotes>
+        <Downvotes>9</Downvotes>
+    </row>
+    <row>
         <Name>Totals</Name>
-        <Upvotes>21</Upvotes>
-        <Downvotes>23</Downvotes>
+        <Upvotes>26</Upvotes>
+        <Downvotes>32</Downvotes>
     </row>
 </votes>
 

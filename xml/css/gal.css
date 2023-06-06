@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header{
+    background-image: url("../img/forest.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+/* carousel */
+#carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust the height as needed */
+}
+
+/* Adjust the brightness of carousel indicators */
+.carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-bg-opacity))!important;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    color: #fff;
+}
+
+/*album*/
+
+#text-with-outline{
+    text-shadow:
+            -1px -1px 0 #fff,
+            1px -1px 0 #fff,
+            -1px 1px 0 #fff,
+            1px 1px 0 #fff;
+}
+#navi .nav-link{
+    color: black;
+}
+
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+.box {
+    border: 1px solid #ccc;
+    max-width: 1200px;
+    margin: 20px 0 20px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* lightbox */
+.card-img-top {
+    transition: border-color 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    border: 2px solid red; /* Replace "red" with your desired border color */
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 412px) { /* Adjust the breakpoint as needed */
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+a.no-underline {
+    text-decoration: none;
+}
+
+a.no-underline:hover {
+    text-decoration: none;
+}

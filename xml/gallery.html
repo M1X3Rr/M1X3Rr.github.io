@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit = no">
+
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/gal.css">
+    <link rel="shortcut icon" href="img/villanova-wildcats-logo-vector.svg" type="image/x-icon">
+    <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="index.html"><img src="img/villanova-wildcats-logo-vector.svg" alt="Logo" style="width: 80px;"></a>
+        <a href="index.html" class="no-underline"><h1 style="color: #3b3b8f; height: 15px;" id="text-with-outline">EGA</h1></a>
+    </header>
+    <!-- navigation -->
+    <div class="container-fluid" style="background-color: #d0d0d0;">
+        <ul class="nav justify-content-center" id="navi">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="form.html">Forms</a>
+            </li>
+            <li class="nav-item disabled">
+                <a class="nav-link" href="form.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <!-- carousel -->
+        <div class="row">
+            <div class="col">
+                <div class="box">
+                    <div id="carousel" class="container">
+                        <div id="carousel_slide" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel_slide" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel_slide" data-slide-to="1"></li>
+                                <li data-target="#carousel_slide" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="img/Gallery/slide1.jpg" data-lightbox="forests" data-title="Forest">
+                                        <img class="d-block w-100" src="img/Gallery/slide1.jpg" alt="First slide">
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="img/Gallery/slide2.jpg" data-lightbox="forests" data-title="Mountain Forest">
+                                        <img class="d-block w-100" src="img/Gallery/slide2.jpg" alt="Second slide">
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="img/Gallery/slide3.jpg" data-lightbox="forests" data-title="Mountain Forest 2">
+                                        <img class="d-block w-100" src="img/Gallery/slide3.jpg" alt="Third slide">
+                                    </a>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel_slide" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_slide" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- vid -->
+        <div class="container-fluid">
+            <div class="embed-responsive embed-responsive-16by9">
+                <div class="container">
+                    <video controls poster="img/Gallery/vid/waterfall-preview.png">
+                        <source src="img/Gallery/vid/waterfall.mp4">
+                    </video>
+                </div>
+                <div class="overlay-text">
+                    <h4>Cool Waterfall</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- album -->
+    <div class="container mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <a href="img/Gallery/album/Kalvaria_l.png" data-lightbox="roadtrip" data-title="Cool Church">
+                            <img src="img/Gallery/album/Kalvaria_l.png" class="card-img-top img-fluid my-img-container" alt="Thumbnail">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">Description.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-body-secondary" id="last-updated-1">Last updated  mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <a href="img/Gallery/album/tower_l.png" data-lightbox="roadtrip" data-title="Cool Castle Tower">
+                            <img src="img/Gallery/album/tower_l.png" class="card-img-top img-fluid my-img-container" alt="Thumbnail">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">Description.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-body-secondary" id="last-updated-2">Last updated  mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <a href="img/Gallery/album/wood_man_l.png" data-lightbox="roadtrip" data-title="Cool Wooden Man">
+                            <img src="img/Gallery/album/wood_man_l.png" class="card-img-top img-fluid my-img-container" alt="Thumbnail">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">Description.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-body-secondary" id="last-updated-3">Last updated  mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="img/Gallery/album/villige_l.png" data-lightbox="image-1" data-title="Cool Slovakian Village">
+                                <img src="img/Gallery/album/villige_l.png" class="card-img-top img-fluid" alt="Thumbnail">
+                                    <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Description.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-body-secondary" id="last-updated-4">Last updated  mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-white mt-auto" style="overflow: clip">
+        <div class="container pt-3 pb-3">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <a href="index.html">
+                        <img src="img/villanova-wildcats-logo-vector.svg" alt="logo" style="width: 170px"/>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="form.html">Forms</a></li>
+                        <li><a href="form.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p>
+                        <a href="https://www.paneurouni.com/" target="_blank"> Paneuropian Uni</a><br/>
+                        Tematínska 3246/10<br/>
+                        Bratislava<br/>
+                        845 05<br/>
+                        <a href="mailto:example@example.com?subject=Hello%20there&amp;body=Hi%20John%2C%0D%0A%0D%0AHow%20are%20you%3F" style="margin-top: 10px">mojemail@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42626.38537542392!2d17.035838448632823!3d48.1073597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89baf59c9d9f%3A0x6470ef7e6a756fdf!2zUGFuZXVyw7Nwc2thIHZ5c29rw6EgxaFrb2xh!5e0!3m2!1ssk!2ssk!4v1684595199442!5m2!1ssk!2ssk" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script>
+        lightbox.option({
+            'fitImagesInViewport': true
+        })
+    </script>
+
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/gal.js"></script>
+    <script src="Bootstrap/popper.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

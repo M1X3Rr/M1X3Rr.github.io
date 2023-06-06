@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<votes>
+    <row>
+        <Name>Alice</Name>
+        <Upvotes>10</Upvotes>
+        <Downvotes>11</Downvotes>
+    </row>
+    <row>
+        <Name>Bob</Name>
+        <Upvotes>4</Upvotes>
+        <Downvotes>3</Downvotes>
+    </row>
+    <row>
+        <Name>Charlie</Name>
+        <Upvotes>7</Upvotes>
+        <Downvotes>9</Downvotes>
+    </row>
+    <row>
+        <Name>Igor</Name>
+        <Upvotes>5</Upvotes>
+        <Downvotes>9</Downvotes>
+    </row>
+    <row>
+        <Name>Totals</Name>
+        <Upvotes>26</Upvotes>
+        <Downvotes>32</Downvotes>
+    </row>
+</votes>
+

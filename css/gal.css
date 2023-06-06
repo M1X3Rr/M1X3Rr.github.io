@@ -71,6 +71,14 @@ header{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
+/* lightbox */
+.card-img-top {
+    transition: border-color 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    border: 2px solid red; /* Replace "red" with your desired border color */
+}
 
 
 .footer {

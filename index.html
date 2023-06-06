@@ -7,6 +7,7 @@
     <title>Vega</title>
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css"> <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="img/villanova-wildcats-logo-vector.svg" type="image/x-icon">
+    <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -92,21 +93,27 @@
     <section>
         <div class="card-deck m-0">
             <div class="card border-primary card-bg-primary m-0">
-                <img src="img/placeholder.png" class="card-img-top" alt="placeholder">
+                <a href="img/placeholder.png" data-lightbox="placeholders" data-title="Title">
+                    <img src="img/placeholder.png" class="card-img-top" alt="placeholder">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum est vel tristique accumsan. Proin sed ligula rhoncus ante cursus posuere at vitae felis.</p>
                 </div>
             </div>
             <div class="card border-info card-bg-info m-0 row-md-12">
-                <img src="img/placeholder.png" class="card-img-top" alt="placeholder">
+                <a href="img/placeholder.png" data-lightbox="placeholders" data-title="Title">
+                    <img src="img/placeholder.png" class="card-img-top" alt="placeholder">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum est vel tristique accumsan.</p>
                 </div>
             </div>
             <div class="card border-info card-bg-info m-0">
-                <img src="img/placeholder.png" class="card-img-top" alt="placeholder">
+                <a href="img/placeholder.png" data-lightbox="placeholders" data-title="Title">
+                    <img src="img/placeholder.png" class="card-img-top" alt="placeholder">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum est vel tristique accumsan. Proin sed ligula rhoncus ante cursus posuere at vitae felis.</p>
@@ -151,8 +158,14 @@
     </footer>
 
     <!-- scripts -->
+    <script>
+        lightbox.option({
+            'fitImagesInViewport': true
+        })
+    </script>
+
     <script src="js/index.js"></script>
-    <script src="Bootstrap/jquery.js"></script>
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
     <script src="Bootstrap/popper.js"></script>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
 </body>

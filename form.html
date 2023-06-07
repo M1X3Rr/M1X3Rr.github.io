@@ -103,20 +103,20 @@
         <form id="genderForm">
           <p class="mt-3">Gender:</p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-            <label class="form-check-label" for="exampleRadios1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="Rad1" value="option1">
+            <label class="form-check-label" for="Rad1">
               Male
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="Rad2" value="option2">
+            <label class="form-check-label" for="Rad2">
               Female
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-            <label class="form-check-label" for="exampleRadios3">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="Rad3" value="option3">
+            <label class="form-check-label" for="Rad3">
               Other
             </label>
           </div>
@@ -163,6 +163,22 @@
   </footer>
 
   <!-- scripts -->
+  <script>
+    // Get the form element
+    const form = document.getElementById("genderForm");
+
+    // Add a submit event listener to the form
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get the selected gender value
+      const selectedGender = document.querySelector('input[name="Rad"]:checked').value;
+
+      console.log("Selected gender: " + selectedGender);
+
+    });
+  </script>
+
   <script src="js/controls/restControl.js"></script>
   <script src="js/controls/emailControl.js"></script>
   <script src="js/controls/regControl.js"></script>
